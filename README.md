@@ -7,6 +7,21 @@ The time complexity of an algorithm that takes 4N + 16 steps would be defined as
 Much like task 1 we can drop our constant values. In this case an algorithm that takes 2N<SUP>2</SUP> steps would simplify to O(N<SUP>2</SUP>) in Big-O notation. 
 
 ## Task 3
+def double_then_sum(array) 
+	doubled_array = []
+
+	array.each do |number| 
+		doubled_array << number *= 2
+	end
+
+	sum = 0
+
+	doubled_array.each do |number| 
+		sum += number
+	end
+	return sum 
+end
+
 We're presented with code that contains two sequential and not nested loops. Loop 1 acceses each number in the array and doubles it, this operation is simply linear O(N), we access one value at a time and alter one value at a time. Loop 2 sums all numbers, again linear O(N), and simply acceses an element and adds it to a running sum. This process is two linear operations summed, n + n = 2n . Just like in task 1 and 2 we can drop the constants resulting in a Big O notation of O(N).
 
 ## Task 4
