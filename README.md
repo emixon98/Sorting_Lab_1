@@ -55,6 +55,6 @@ def every_other(array)
 end
 ```
 
-In this code we have two loops. The outer loop iterates through every element in the array to check for even indices. The inner loop is entered about half of the time. Then if the index is even, we add every other value in it, which would be n steps. The inner loop executes about $\frac{n}{2}$ times, and when it does n operations are performed. This makes the algorithm steps become $\frac{n}{2}$ * n = \frac{n<SUP>2</SUP>}{2}$, again allowing us to drop the 1/2 constant and extrapolate this operation as an Big O(N<SUP>2</SUP>). Demonstrating that even if we perform an operation half of the time, are scaling is still N<SUP>2</SUP> based on our algorithm.
+In this code we have two loops. The outer loop iterates through every element in the array to check for even indices. The inner loop is entered about half of the time. Then if the index is even, we add every other value in it, which would be n steps. The inner loop executes about $\frac{n}{2}$ times, and when it does n operations are performed. This makes the algorithm steps become $\frac{n}{2}$ * n = $\frac{n<SUP>2</SUP>}{2}$ , again allowing us to drop the 1/2 constant and extrapolate this operation as an Big O(N<SUP>2</SUP>). Demonstrating that even if we perform an operation half of the time, are scaling is still N<SUP>2</SUP> based on our algorithm.
 
 
